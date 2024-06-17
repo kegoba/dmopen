@@ -1,20 +1,34 @@
 import React from 'react';
-import { CheckIcon } from '@heroicons/react/24/outline';
-
 
 import fuel from "../images/fuel.jpg"
 import diesel from "../images/diesel1.jpg"
-import energy from "../images/energ.jpg"
-import oil from "../images/oil.jpg"
-import lpg from "../images/lpg.jpg"
+
 
 
 const AboutUs = () => {
   return (
     <div name='platforms' className='w-full my-32 mb-10'>
+              <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-4 pt-4  rounded'>
+            <div>
+            
+            <img src={fuel}  alt="" className=" w-[400px] h-[400px]" />
+              <p className='text-lg pt-2 pb-4'>
+               FOUNDER
+              </p>
+            </div>
+            <div>
+              
+              <img src={diesel}  alt="" className=" w-[400px] h-[400px]" />
+              <p className='text-lg pt-2 pb-4'>
+              CO FOUNDER
+
+              </p>
+          </div>
+            
+        </div>
       <div className='max-w-[1240px] mx-auto px-2'>
-        <h2 className='text-5xl font-bold text-center'>What is Our Goal?</h2>
-        <p className='text-2xl py-8 text-gray-500 text-center'>
+        <h2 className='text-lg font-bold text-center'>What is Our Goal?</h2>
+        <p className='text-sm py-8 text-gray-500 text-center'>
         At Dmopen, our primary goal is to become the preferred partner 
         for oil trading companies worldwide, offering unparalleled 
         expertise, reliability, and value. We aim to establish 
@@ -29,50 +43,39 @@ const AboutUs = () => {
 
         <div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-4 pt-4'>
             <div>
-            <h3 className='font-bold text-lg'>Our Mission</h3>
-              <p className='text-lg pt-2 pb-4'>
-              At DMOpen, we provide high-quality Petrol (PMS) 
-              that ensures optimal performance for your vehicles.
-              Our petrol is refined to meet international standards, 
-              offering clean combustion and efficient engine operation. 
-              With DMOpen Petrol, you can count on smooth acceleration, 
-              reduced emissions, and enhanced engine longevity
+            <h3 className='font-bold text-sm'>Our Mission</h3>
+              <p className='text-sm pt-2 pb-4'>
+              At DMOpen, our mission is to facilitate seamless 
+              transactions in the oil trading industry by providing 
+              reliable procurement, distribution, and financial services. 
+              We strive to exceed our clients' expectations through innovation, 
+              integrity, and excellence in every aspect of our operations. 
+              Our commitment to quality, sustainability, and customer satisfaction 
+              drives us to continually improve and adapt to meet the 
+              evolving needs of the market
               </p>
             </div>
             <div>
               <h3 className='font-bold text-lg'>Our Vission</h3>
              
-              <p className='text-lg pt-2 pb-4'>
-              Dmopen Diesel is engineered to deliver superior performance
-               and reliability for your diesel-powered vehicles and equipment.
-                Our diesel fuel is formulated with advanced additives to provide 
-                excellent lubricity, prevent injector fouling, and improve fuel 
-                efficiency. Whether for commercial fleets or personal vehicles, 
-                DMOpen Diesel ensures consistent power delivery and minimal downtime.
+              <p className='text-sm pt-2 pb-4'>
+              Our vision at DMOpen is to be the leading provider 
+              of comprehensive oil trading solutions, recognized 
+              for our unwavering commitment to professionalism, 
+              transparency, and ethical business practices. We aspire
+               to set new standards of excellence in the industry, 
+               leveraging cutting-edge technology and strategic partnerships 
+               to deliver unparalleled value to our clients. Through our 
+               dedication to innovation, sustainability, and customer-centric
+                approach, we aim to shape the future of oil trading and contribute 
+                to the growth and prosperity of our stakeholders and the communities we serve.
 
               </p>
           </div>
             
         </div>
 
-        <div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-4 pt-4'>
-            <div>
-            
-            <img src={fuel}  alt="" className="" />
-              <p className='text-lg pt-2 pb-4'>
-               FOUNDER
-              </p>
-            </div>
-            <div>
-              
-              <img src={diesel}  alt="" className="" />
-              <p className='text-lg pt-2 pb-4'>
-              CO FOUNDER
 
-              </p>
-          </div>
-            
-        </div>
       </div>
     </div>
   );

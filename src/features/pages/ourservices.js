@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckIcon } from '@heroicons/react/24/outline';
+
 
 
 import fuel from "../images/fuel.jpg"
@@ -13,7 +13,7 @@ const ourServices = () => {
   return (
     <div name='platforms' className='w-full my-32 mb-10'>
       <div className='max-w-[1240px] mx-auto px-2'>
-        <h2 className='text-5xl font-bold text-center'>What We Offer</h2>
+        <h2 className='text-lg font-bold text-center'>What We Offer</h2>
         <p className='text-2xl py-8 text-gray-500 text-center'>
         Dmopen is dedicated to facilitating the efficient and profitable 
         buying and selling of oil products, offering expertise, strategic 
