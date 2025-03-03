@@ -47,19 +47,19 @@ const Blog = () => {
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 1024, // screen width of 1024px or less
+        breakpoint: 1024, 
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 768, // screen width of 768px or less
+        breakpoint: 768, 
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 640, // screen width of 640px or less
+        breakpoint: 640, 
         settings: {
           slidesToShow: 1,
         },
@@ -81,7 +81,7 @@ const Blog = () => {
               <article className="bg-white shadow-md rounded overflow-hidden">
                 <div className="aspect-w-16 aspect-h-10 lg:aspect-w-4 lg:aspect-h-3">
                   <img
-                    className="object-cover w-full h-[300px] rounded"
+                    className="object-cover w-full h-[300px] rounded transition-transform transform hover:scale-105"
                     src={article.imgPath}
                     alt={article.imgAlt}
                   />

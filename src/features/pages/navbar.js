@@ -17,21 +17,19 @@ const Navbar = () => {
         <div className="px-2 flex justify-between items-center w-full h-full">
           <div className="flex items-center">
             <Link to="/" className="text-3xl font-bold mr-4 sm:text-4xl">
-              <img className="h-12 w-17" src={logo} alt="logo" />
+              <img className="h-8 w-10 transition-transform transform hover:scale-105" src={logo} alt="logo" />
             </Link>
             <ul className="hidden md:flex">
-              <li><Link className="p-4" to="/" >Home</Link></li>
-              <li><Link className="p-4" to="/about-us" >About</Link></li>
               <li><Link className="p-4" to="/ourservices" >Our Services</Link></li>
-              <li><Link className="p-4" to="/platforms" >Platforms</Link></li>
-              <li><Link className="p-4" to="/pricing" >Pricing</Link></li>
+              <li><Link className="p-4" to="/about-us" >About</Link></li>
+             
             </ul>
           </div>
           <div className="hidden md:flex pr-4">
             <Link to="login" className="px-8 py-3">
               Login
             </Link>
-            <Link to="/signup" className="px-8 py-3">Sign Up</Link>
+           
           </div>
           <div className="md:hidden mr-4" onClick={handleClick}>
             {!nav ? <Bars3Icon className="w-5" /> : <XMarkIcon className="w-5" />}

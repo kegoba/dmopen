@@ -2,12 +2,14 @@ import React from 'react'
 
 
 import Slider from "./slider"
+import HeroSection from './heroSection'
 
 const Home = () => {
   return (
     < div >
-    <div name='home' className='w-full h-screen  flex flex-col justify-between'>
+    <div  >
         <Slider/>
+        <HeroSection/>
         
     </div>
     </div>
