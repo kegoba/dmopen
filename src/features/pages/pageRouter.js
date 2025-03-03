@@ -5,6 +5,7 @@ import SignUp from './signup'
 import Home from './home'
 import AboutUs from './about'
 import {  Route, Routes } from 'react-router-dom'
+import ContactUs from './contact'
 
 const PageRouter = ()=>{
 
@@ -15,6 +16,7 @@ const PageRouter = ()=>{
         <Route  path="/login" element={<Login/>} />
         <Route  path="/signup" element={<SignUp/>} />
         <Route  path="/about-us" element={<AboutUs/>} />
+        <Route  path="/contact-us" element={<ContactUs/>} />
     </Routes>
     )
 }
